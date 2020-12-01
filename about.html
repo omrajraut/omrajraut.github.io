@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Raj Raut</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav class="navbar">
+      <span id="name">
+          <a href="./">Om Raj Raut</a>
+        </span>
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./video.html">Video</a></li>
+            <li>
+                <div class="dropdown">
+                    <div href="./gallery.html" id="dropdown_btn">Gallery</div>
+                    <div id="dropdown_content">
+                        <a href="./shows.html">Shows</a>
+                        <a href="./headshots.html">Headshots</a>
+                        <a href="./press.html">Press</a>
+                        <a href="./resume.html">Resume</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li id="ig_icon_container"><a href="https://www.instagram.com/reyan_razz/"><img src="./src/icons/ig_white.png" alt=""></a></li>
+            <a href="javascript:void(0);" class="icon" onclick="() => console.log('hey bb') ">
+        <i class="fa fa-bars"></i>
+      </a>
+        </ul>
+    </nav>
+    <div class="about_intro">
+
+        <div id="content">
+            My name is Om Raj Raut. I am an Actor and writer.
+            I strongly believe in creating opportunity, bringing diversity, and creating authentic art.
+        </div>  
+
+        <div id="full_bio_btn">
+            <div onclick="smoothScroll(document.querySelector('#about-full'))">
+                Click for Full Bio
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about_full" id="about-full">
+        <div id="content">
+            Om Raj is a Nepalese actor and writer. He was born in Middle Asia Nepal, grew up in Dhading
+            and Kathmandu, and came to the United States in his late teen. He is currently based in New
+            York City where he is pursuing a carrier in theatre, tv, and film. He is a proud first-generation
+            college graduate specialized in theatre from the Citi University of New York. His main artistic
+            concern is to bring diverse art and culture to the international audience from his diverse
+            background where he has learned English as his third language after Nepali and Hindi.
+            <br><br>
+            In June 2020, he appeared in his solo show called &quot;1953: Race For The Summit&quot; in a Frigid New
+            York Theatre Festival which was written, directed, and acted by himself. Recently in September
+            2020, he appeared as Toby in a play called ten ways to survive life in quarantine, AlfaNYC&#39;s
+            online Production, written by Don Zolidis and directed by Alice Camarota.
+            <br><br>
+            His work has been seen on theatre for a new city on his one-man solo show, Off-Off-Broadway
+            at AlfaNYC theatre including Lysistrata and A Private Christmas Carol. While studying BA in
+            theatre at the City University of New York, He has performed in many productions at Marian
+            Anderson Theater and BMCC Tribeca Performing Center including King Lear, Loophole, House Of
+            Spirits, Midsummer Night&#39;s Dream, and Our Lady of 121 Street.
+            <br><br>
+            Before coming to the US, Om Raj has performed in the International theatre festival Calcutta
+            India, his home country&#39;s theatre Nepal, where he started his professional acting carrier with a
+            production of A Night With Mao.
+            <br><br>
+            His one-man solo show has been selected For the New York summer theatre festival 2021. He
+            wants to use his pioneering spirits and his love for the arts towards underserved children and
+            diverse artists by opening a performing art school in his home country in the future, where he
+            strongly feels the lack of representation in the global platform.
+        </div>
+
+        <div id="about_pic">
+            <img src="./src/3.jpg">
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer_header">
+            <span id="email">omrajraut480@gmail.com</span>
+            <span id="name">Om Raj Raut</span>
+            <span id="ig_icon"><img src="./src/icons/ig_white.png" alt="" width="5%"></span>
+        </div>
+        <div class="footer_navbar">
+            <li><a href="./">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./media.html">Media</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </div>
+    </footer>
+    <script>
+    window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+    </script>
+</body>
+</html>

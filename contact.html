@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Raj Raut</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav class="navbar">
+      <span id="name">
+          <a href="./">Om Raj Raut</a>
+        </span>
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./video.html">Video</a></li>
+            <li>
+                <div class="dropdown">
+                    <div href="./gallery.html" id="dropdown_btn">Gallery</div>
+                    <div id="dropdown_content">
+                        <a href="./shows.html">Shows</a>
+                        <a href="./headshots.html">Headshots</a>
+                        <a href="./press.html">Press</a>
+                        <a href="./resume.html">Resume</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li id="ig_icon_container"><a href="https://www.instagram.com/reyan_razz/"><img src="./src/icons/ig_white.png" alt=""></a></li>
+            <a href="javascript:void(0);" class="icon" onclick="() => console.log('hey bb') ">
+        <i class="fa fa-bars"></i>
+      </a>
+        </ul>
+    </nav>
+
+    <div class="contact">
+
+        <div class="contact-content">
+
+            <div id="contact-pic">
+                <img src="./src/7.jpg" alt="">
+            </div>
+
+            <div class="contact-form">
+                <h2>Hit me up</h2>
+                <form id="contact-form-content">
+                    <div id = "form-item"> 
+                        <label for="firstname"> First name : </label>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
+                    <div id = "form-item">
+                        <label for="lastname"> Last name </label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+                    <div id = "form-item">
+                        <label for="email"> Email </label>
+                        <input type="text" id="email" name="email">
+                    </div>
+
+                    <div id = "form-item">
+                        <label for="message"> Message </label>
+                        <textarea type="text" id="message" name="message"></textarea>
+                    </div>
+
+                    <button id= "submit-btn"type="submit">Send</button>
+
+                </form>
+            </div>
+
+
+        </div>
+
+    </div>
+        
+
+    <footer class="footer">
+        <div class="footer_header">
+            <span id="email">omrajraut480@gmail.com</span>
+            <span id="name">Om Raj Raut</span>
+            <span id="ig_icon"><img src="./src/icons/ig_white.png" alt="" width="5%"></span>
+        </div>
+        <div class="footer_navbar">
+            <li><a href="./">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./media.html">Media</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </div>
+    </footer>    
+
+    <script src="./script/contact.js"></script>
+</body>
+</html>
