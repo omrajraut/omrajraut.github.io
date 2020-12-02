@@ -758,7 +758,7 @@ header .icon {
     width: 100%;
   }
   .headshots-container .section-1, .headshots-container .section-2, .headshots-container .section-3, .headshots-container .section-4 {
-    height: auto;
+    height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -768,7 +768,7 @@ header .icon {
     padding: 5%;
   }
   .headshots-container .section-1 img, .headshots-container .section-2 img, .headshots-container .section-3 img, .headshots-container .section-4 img {
-    width: auto;
+    width: 100%;
     height: auto;
     padding: 10%;
   }

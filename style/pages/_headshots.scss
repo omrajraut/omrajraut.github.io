@@ -23,12 +23,12 @@
         flex-direction: column-reverse;
         width: 100%;
         .section-1, .section-2, .section-3, .section-4{
-            height: auto;
+            height: 100%;
             flex-direction: column;
             justify-content: space-around;
             padding : 5%;
             img{
-                width: auto;
+                width: 100%;
                 height: auto;
                 padding : 10%;
             }
