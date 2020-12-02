@@ -277,7 +277,11 @@ header .icon {
             flex-direction: column;
   }
   .footer .footer_header #email {
+    font-family: "Montserrat", sans-serif;
     font-size: 1.7vmax;
+  }
+  .footer .footer_header img {
+    height: 100%;
   }
   .footer .footer_navbar {
     display: none;
