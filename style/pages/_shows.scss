@@ -1,0 +1,43 @@
+.show-content{
+    color : white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    figure{
+        display: flex;
+        padding : 10% 5%;
+        height: 100vh;
+        justify-content: space-around;
+
+        img{
+            padding : 5%;
+        }
+
+        figcaption{
+            text-align: center;
+            margin : auto 0;
+            font-size: 2vw;
+        }
+    }
+}
+
+@media only screen and (max-width : 768px ){
+    .show-content{
+        padding : 10% 5%;
+        figure{
+            padding : 10% 5%;
+            height: auto;
+            width: 100%;
+    
+            img{
+                padding : 5%;
+                width: 60%;
+            }
+    
+            figcaption{
+                font-size: 1vmax;
+            }
+        }
+    }
+    
+}

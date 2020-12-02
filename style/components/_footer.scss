@@ -1,0 +1,71 @@
+.footer{
+    color : white;
+    height : 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .footer_header{
+        display: flex;
+        padding : 0 10%;
+        align-items: center;
+        justify-content: space-between;
+        #email, #name, #ig_icon{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #email{
+            font-family: $primary_font;
+            font-size: 1.3vmax;
+        }
+
+        #name{
+            font-family: $secondary_font;
+            font-size: 4vmax;
+        }
+
+        #ig_icon img{
+            width: 15%;
+        }
+
+    }
+    .footer_navbar{
+        display: flex;
+        justify-content: space-around;
+        padding : 0 20%;
+        align-items: center;
+        li{
+            list-style-type: none;
+            a{
+                font-size: 1.5vmax;
+                font-family: $primary_font;
+                letter-spacing: .2rem;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width : 768px ){
+    .footer{
+        // background-color: #333333;
+        padding: 10% 5%;
+        height : 25vh;
+        justify-content: space-evenly;
+        .footer_header{
+            height: 100%;
+            flex-direction: column;
+    
+            #email{
+                // font-family: $primary_font;
+                font-size: 1.7vmax;
+            }
+    
+        }
+        .footer_navbar{
+            display: none;
+        }
+    }
+
+}
