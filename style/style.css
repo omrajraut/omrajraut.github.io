@@ -263,6 +263,7 @@ header .icon {
 
 @media only screen and (max-width: 768px) {
   .footer {
+    background-color: #333333;
     padding: 10% 5%;
     height: 25vh;
     -webkit-box-pack: space-evenly;
@@ -275,13 +276,22 @@ header .icon {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .footer_header #name {
+    background-color: black;
+    border: 1px solid white;
   }
   .footer .footer_header #email {
     font-family: "Montserrat", sans-serif;
     font-size: 1.7vmax;
+    background-color: black;
   }
   .footer .footer_header img {
     height: 100%;
+    background-color: black;
   }
   .footer .footer_navbar {
     display: none;

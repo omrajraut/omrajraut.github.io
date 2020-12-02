@@ -49,20 +49,29 @@
 
 @media only screen and (max-width : 768px ){
     .footer{
+        background-color: #333333;
         padding: 10% 5%;
         height : 25vh;
         justify-content: space-evenly;
         .footer_header{
             height: 100%;
             flex-direction: column;
+            justify-content: space-between;
     
+            #name{
+                background-color: black;
+                border : 1px solid white;
+            }
+
             #email {
                 font-family: $primary_font;
                 font-size: 1.7vmax;
+                background-color: black;
             }
 
             img{
                 height: 100%;
+                background-color: black;
             }
     
         }
