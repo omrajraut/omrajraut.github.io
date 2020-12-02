@@ -79,10 +79,6 @@ a {
   display: none;
 }
 
-.navbar-hide, .footer-hide {
-  display: none;
-}
-
 #dropdown_content {
   display: none;
   position: absolute;
@@ -109,19 +105,19 @@ a {
   height: auto;
 }
 
-.main_div {
+.main-div {
   background-color: black;
   height: 100vh;
   width: 100%;
   overflow: hidden;
 }
 
-.main_div img {
+.main-div img {
   margin-top: -20%;
   width: 100%;
 }
 
-.main_div_overlay {
+.main-div-overlay {
   position: absolute;
   background-color: rgba(44, 42, 42, 0.5);
   left: 0;
@@ -142,7 +138,7 @@ a {
   font-size: 2.5vmax;
 }
 
-.first_section {
+.first-section {
   background-color: black;
   height: 100vh;
   color: white;
@@ -159,12 +155,12 @@ a {
           justify-content: space-between;
 }
 
-.first_section h2 {
+.first-section h2 {
   text-align: center;
   font-size: 3vmax;
 }
 
-.first_section .projects_section {
+.first-section .projects-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,7 +168,7 @@ a {
   height: 75%;
 }
 
-.first_section .projects_section #left, .first_section .projects_section #right {
+.first-section .projects-section #left, .first-section .projects-section #right {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,7 +176,7 @@ a {
   padding: 1%;
 }
 
-.first_section .projects_section #left figure, .first_section .projects_section #right figure {
+.first-section .projects-section #left figure, .first-section .projects-section #right figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,24 +193,24 @@ a {
   width: 100%;
 }
 
-.first_section .projects_section #left figure img, .first_section .projects_section #right figure img {
+.first-section .projects-section #left figure img, .first-section .projects-section #right figure img {
   margin: auto;
 }
 
-.first_section .projects_section #left figure figcaption, .first_section .projects_section #right figure figcaption {
+.first-section .projects-section #left figure figcaption, .first-section .projects-section #right figure figcaption {
   text-align: center;
 }
 
-.first_section .projects_section #left figure img {
+.first-section .projects-section #left figure img {
   height: 87.5%;
   padding-bottom: 2.5%;
 }
 
-.first_section .projects_section #right figure img {
+.first-section .projects-section #right figure img {
   width: 60%;
 }
 
-.first_section #more_projects_btn {
+.first-section #more_projects_btn {
   width: 20%;
   margin: 0 auto;
   text-align: center;
@@ -621,5 +617,64 @@ a {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-div img {
+    margin: 0;
+    height: 100%;
+    width: auto;
+  }
+  .first-section {
+    padding: 5%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .first-section h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .first-section .projects-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .first-section .projects-section #left, .first-section .projects-section #right {
+    width: 100%;
+  }
+  .first-section .projects-section #left figure, .first-section .projects-section #right figure {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .first-section .projects-section #left figure figcaption, .first-section .projects-section #right figure figcaption {
+    font-size: 2vmin;
+  }
+  .first-section .projects-section #left figure img, .first-section .projects-section #right figure img {
+    width: 70%;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
