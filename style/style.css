@@ -21,7 +21,7 @@ a {
   text-decoration: none;
 }
 
-.navbar {
+header {
   background: -webkit-gradient(linear, left top, left bottom, from(#201e1e), to(rgba(32, 32, 32, 0)));
   background: linear-gradient(to bottom, #201e1e, rgba(32, 32, 32, 0));
   color: white;
@@ -43,7 +43,7 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
-.navbar #name {
+header .name {
   width: 50%;
   height: 100%;
   text-transform: uppercase;
@@ -56,7 +56,7 @@ a {
   font-size: 2.5vmax;
 }
 
-.navbar ul {
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,17 +75,17 @@ a {
   font-size: 1.3vmax;
 }
 
-.navbar .icon {
+header .icon {
   display: none;
 }
 
-#dropdown_content {
+#dropdown-content {
   display: none;
   position: absolute;
   border-radius: 2em;
 }
 
-#dropdown_content a {
+#dropdown-content a {
   float: none;
   padding: 10% 1vmax 10%;
   text-decoration: none;
@@ -96,13 +96,95 @@ a {
   margin: 2%;
 }
 
-.dropdown:hover #dropdown_content {
+.dropdown:hover #dropdown-content {
   display: block;
 }
 
-.navbar #ig_icon_container img {
+.navbar #ig-icon-container img {
   width: 2vmax;
   height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    background-color: black;
+    height: 10vh;
+    padding: 0%;
+    padding-left: 20%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: absolute;
+    z-index: 1;
+    font-family: "Montserrat", sans-serif;
+  }
+  header .name {
+    width: 60%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    top: 10vh;
+    width: 100%;
+  }
+  header nav div {
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid black;
+    font-size: 2vmax;
+  }
+  header .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 4vmax;
+  }
+  #dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 2em;
+  }
+  #dropdown-content a {
+    float: none;
+    padding: 10% 1vmax 10%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #201e1e;
+    border-radius: 2em;
+    margin: 2%;
+  }
+  .dropdown:hover #dropdown-content {
+    display: block;
+  }
+  .navbar #ig-icon-container img {
+    width: 2vmax;
+    height: auto;
+  }
 }
 
 .footer {

@@ -9,32 +9,63 @@
 <body>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <nav class="navbar">
-      <span id="name">
-          <a href="./">Om Raj Raut</a>
-        </span>
-        <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./video.html">Video</a></li>
-            <li>
-                <div class="dropdown">
-                    <div href="./gallery.html" id="dropdown_btn">Gallery</div>
-                    <div id="dropdown_content">
-                        <a href="./shows.html">Shows</a>
-                        <a href="./headshots.html">Headshots</a>
-                        <a href="./press.html">Press</a>
-                        <a href="./resume.html">Resume</a>
-                    </div>
+    <header class="navbar">
+    
+    
+        <div class="name">
+            <a href="./">Om Raj Raut</a>
+        </div>
+    
+        <nav class="nav-bar">
+            <div>
+                <a href="./">Home</a>
+            </div>
+    
+            <div>
+                <a href="./about.html">About</a>
+            </div>
+    
+            <div>
+                <a href="./video.html">Video</a>
+            </div>
+    
+            <div>
+                <a href="./contact.html">Contact</a>
+            </div>
+    
+            <div class="dropdown">
+                <div href="./gallery.html" id="dropdown-btn">Gallery</div>
+                <div id="dropdown-content">
+                    <a href="./shows.html">Shows</a>
+                    <a href="./headshots.html">Headshots</a>
+                    <a href="./press.html">Press</a>
+                    <a href="./resume.html">Resume</a>
                 </div>
-            </li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li id="ig_icon_container"><a href="https://www.instagram.com/reyan_razz/"><img src="./src/icons/ig_white.png" alt=""></a></li>
-            <a href="javascript:void(0);" class="icon" onclick="() => console.log('hey bb') ">
-        <i class="fa fa-bars"></i>
-      </a>
-        </ul>
-    </nav>
+            </div>
+    
+            <div id="ig-icon-container">
+                <a href="https://www.instagram.com/reyan_razz/"><img src="./src/icons/ig_white.png" alt=""></a>
+            </div>
+        </nav>
+    
+    
+    
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    
+        <script>
+            let burger = document.querySelector('.icon');
+            let navbar = document.querySelector('.nav-bar');
+            let dropped = false;
+    
+            burger.onclick = () => {
+                navbar.style.display = dropped ? 'none' : 'block';
+                dropped = !dropped;
+            }
+        </script>
+    
+    </header>
     <div class="about_intro">
 
         <div id="content">
