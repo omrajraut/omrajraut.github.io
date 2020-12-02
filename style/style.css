@@ -199,6 +199,7 @@ a {
 
 .first-section .projects-section #left figure figcaption, .first-section .projects-section #right figure figcaption {
   text-align: center;
+  font-size: 2vmin;
 }
 
 .first-section .projects-section #left figure img {
@@ -210,7 +211,7 @@ a {
   width: 60%;
 }
 
-.first-section #more_projects_btn {
+.first-section #more-projects-btn {
   width: 20%;
   margin: 0 auto;
   text-align: center;
