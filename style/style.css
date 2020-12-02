@@ -770,7 +770,7 @@ header .icon {
   .headshots-container .section-1 img, .headshots-container .section-2 img, .headshots-container .section-3 img, .headshots-container .section-4 img {
     width: 100%;
     height: auto;
-    padding: 10%;
+    padding: 5%;
   }
 }
 
