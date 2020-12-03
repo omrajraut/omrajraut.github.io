@@ -73,6 +73,9 @@
 @media only screen and (max-width : 768px ){
 
     .contact{
+
+        // background-color: #333333;
+        height: 200vh;
         .contact-content{
             flex-direction: column;
             justify-content: space-around;
@@ -94,20 +97,17 @@
         padding : 5%;
         width: 100%;
         height: 50%;
-
         h2{
-            font-size: 2vmax;
-            // background-color: #555555;
             padding: 5%;
-
+            font-size: 5vmax;
+            margin: 0;
         }
-    
-
+        height: auto;
         #contact-form-content{
-            // background-color: #333333;
+            height: auto;
             padding: 10%;
             label, input, #submit-btn{
-                font-size : 1.5vmax;
+                font-size : 3vmax;
             }
         }  
     

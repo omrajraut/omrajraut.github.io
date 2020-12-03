@@ -563,7 +563,10 @@ header .icon {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 80% 10%;
+    padding: 50% 10%;
+  }
+  .about_intro #full_bio_btn {
+    font-size: 2vmax;
   }
   .about_full {
     -webkit-box-orient: vertical;
@@ -573,12 +576,16 @@ header .icon {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding: 5%;
+    height: 200vh;
   }
   .about_full #content {
-    line-height: 2vmax;
-    font-size: 1.2vmax;
+    line-height: 1.5em;
+    font-size: 2vmax;
+    height: 100vh;
+    padding: 2%;
   }
   .about_full #about_pic {
+    padding: 5%;
     width: 100%;
     height: 40%;
   }
@@ -684,6 +691,9 @@ header .icon {
 }
 
 @media only screen and (max-width: 768px) {
+  .contact {
+    height: 200vh;
+  }
   .contact .contact-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -710,16 +720,19 @@ header .icon {
     padding: 5%;
     width: 100%;
     height: 50%;
+    height: auto;
   }
   .contact-form h2 {
-    font-size: 2vmax;
     padding: 5%;
+    font-size: 5vmax;
+    margin: 0;
   }
   .contact-form #contact-form-content {
+    height: auto;
     padding: 10%;
   }
   .contact-form #contact-form-content label, .contact-form #contact-form-content input, .contact-form #contact-form-content #submit-btn {
-    font-size: 1.5vmax;
+    font-size: 3vmax;
   }
 }
 
