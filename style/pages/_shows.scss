@@ -13,8 +13,8 @@
         border-bottom: 1px solid gray;
 
         img{
-            // height: 100%;
-            width: auto;
+            height: 100%;
+            // width: auto;
             border : 5px solid white;
         }
 
@@ -31,11 +31,14 @@
         }
     }
 
-    figure:nth-child(odd){
-        flex-direction: row-reverse;
+    figure:nth-child(1){
+        margin-top: 5vh;
+        // background-color: lightblue;
     }
 
 }
+
+
 
 @media only screen and (max-width : 768px ){
     .show-content{
@@ -44,9 +47,10 @@
             padding : 10% 5%;
             height: auto;
             width: 100%;
+            flex-direction: column;
             img{
                 padding : 5%;
-                width: 60%;
+                width: 100%;
                 margin : auto 0;
             }
     

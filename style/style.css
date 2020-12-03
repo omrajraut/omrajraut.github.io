@@ -995,7 +995,7 @@ header .icon {
 }
 
 .show-content figure img {
-  width: auto;
+  height: 100%;
   border: 5px solid white;
 }
 
@@ -1016,11 +1016,8 @@ header .icon {
   border-radius: 20px;
 }
 
-.show-content figure:nth-child(odd) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+.show-content figure:nth-child(1) {
+  margin-top: 5vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1031,10 +1028,14 @@ header .icon {
     padding: 10% 5%;
     height: auto;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .show-content figure img {
     padding: 5%;
-    width: 60%;
+    width: 100%;
     margin: auto 0;
   }
   .show-content figure figcaption {
