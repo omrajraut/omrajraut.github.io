@@ -10,6 +10,8 @@
 
 body {
   background-color: black;
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
 }
 
 html {
@@ -19,6 +21,36 @@ html {
 a {
   color: white;
   text-decoration: none;
+}
+
+img {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+}
+
+img:hover {
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 header {
@@ -398,6 +430,8 @@ header .icon {
 .first-section .projects-section #left figure figcaption, .first-section .projects-section #right figure figcaption {
   text-align: center;
   font-size: 1.5vmax;
+  -webkit-animation: fadeIn 4s;
+          animation: fadeIn 4s;
 }
 
 .first-section .projects-section #left figure img {
@@ -420,6 +454,15 @@ header .icon {
   border-radius: 1em;
   -webkit-box-shadow: 1px 2px 0px 1px;
           box-shadow: 1px 2px 0px 1px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -698,6 +741,7 @@ header .icon {
   border: 1px solid white;
   background-color: #201e1e;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -922,6 +966,7 @@ header .icon {
   display: flex;
   padding: 10%;
   height: 100vh;
+  max-width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -929,7 +974,7 @@ header .icon {
 }
 
 .show-content figure img {
-  height: 100%;
+  width: auto;
   border: 5px solid white;
 }
 

@@ -13,6 +13,7 @@ $secondary_font : 'Kristi', cursive;
 
 body{
     background-color: black;
+    animation: fadeIn 2s;
 }
 
 html{
@@ -22,6 +23,24 @@ html{
 a{
     color : white;
     text-decoration: none;
+}
+
+img {
+-webkit-transition: -webkit-transform .8s ease-in-out;
+        transition:         transform .8s ease-in-out;
+}
+img:hover {
+-webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 
