@@ -159,6 +159,27 @@ header .icon {
   color: white;
   overflow: hidden;
   overflow-y: hidden;
+  text-transform: uppercase;
+  -webkit-animation: getIn .8s;
+          animation: getIn .8s;
+}
+
+@-webkit-keyframes getIn {
+  from {
+    left: -20%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes getIn {
+  from {
+    left: -20%;
+  }
+  to {
+    left: 0;
+  }
 }
 
 .back, .close, .gallery-show-more {

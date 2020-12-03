@@ -83,6 +83,18 @@ header{
     color : white;
     overflow: hidden;
     overflow-y: hidden;
+    text-transform: uppercase;
+    animation: getIn .8s;
+}
+
+
+@keyframes getIn{
+    from{
+        left : -20%;
+    }
+    to{
+        left : 0;
+    }
 }
 
 .back, .close, .gallery-show-more{
