@@ -576,18 +576,27 @@ header .icon {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding: 5%;
-    height: 200vh;
+    height: 230vh;
   }
   .about_full #content {
     line-height: 1.5em;
     font-size: 2vmax;
-    height: 100vh;
+    height: 130vh;
     padding: 2%;
   }
   .about_full #about_pic {
     padding: 5%;
     width: 100%;
-    height: 40%;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

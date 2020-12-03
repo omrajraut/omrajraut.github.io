@@ -62,18 +62,21 @@
         flex-direction: column;
         justify-content: space-around;
         padding : 5%;
-        height: 200vh;
+        height: 230vh;
         // background-color: aliceblue;
         #content{
             line-height: 1.5em;
             font-size: 2vmax;
-            height: 100vh;
+            height: 130vh;
             padding: 2%;
         }
         #about_pic{
             padding: 5%;
             width: 100%;
-            height: 40%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
