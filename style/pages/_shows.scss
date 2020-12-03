@@ -4,22 +4,35 @@
     flex-direction: column;
     justify-content: space-around;
     figure{
+
         display: flex;
-        padding : 10% 5%;
+        padding : 10%;
         height: 100vh;
-        justify-content: space-around;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
 
         img{
-            padding : 5%;
             height: 100%;
+            border : 5px solid white;
         }
 
         figcaption{
             text-align: center;
-            margin : auto 0;
-            font-size: 2vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.7vmax;
+            padding: 5%;
+            // background-color: rgba(11, 81, 81, .5);
+            margin : 0 2%;
+            border-radius: 20px;
         }
     }
+
+    figure:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
 }
 
 @media only screen and (max-width : 768px ){
@@ -29,14 +42,14 @@
             padding : 10% 5%;
             height: auto;
             width: 100%;
-    
             img{
                 padding : 5%;
                 width: 60%;
+                margin : auto 0;
             }
     
             figcaption{
-                font-size: 1vmax;
+                font-size: 2vmax;
             }
         }
     }
