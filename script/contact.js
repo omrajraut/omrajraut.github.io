@@ -20,6 +20,7 @@ alertModalBtn.onclick = e => {
 
 let formData;
 contactForm.onsubmit = e => {
+    console.log("hey there!");
     e.preventDefault();
     formData = new FormData(contactForm);
 

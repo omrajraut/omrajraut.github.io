@@ -765,6 +765,41 @@ header .icon {
   cursor: pointer;
 }
 
+#alert-modal {
+  display: none;
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  width: 40%;
+  height: 20%;
+  -webkit-transition: all 2s ease-in;
+  transition: all 2s ease-in;
+  padding: 5%;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  border: 1px solid white;
+  -webkit-animation: easeIn 1s;
+          animation: easeIn 1s;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#alert-modal #close {
+  font-size: 1.3vmax;
+  background-color: white;
+  color: gray;
+  border-radius: 20px;
+  padding: 2% 5%;
+}
+
 @media only screen and (max-width: 768px) {
   .contact {
     height: 200vh;
@@ -809,41 +844,13 @@ header .icon {
   .contact-form #contact-form-content label, .contact-form #contact-form-content input, .contact-form #contact-form-content #submit-btn {
     font-size: 3vmax;
   }
-}
-
-#alert-modal {
-  display: none;
-  position: absolute;
-  left: 30%;
-  top: 40%;
-  width: 40%;
-  height: 20%;
-  -webkit-transition: all 2s ease-in;
-  transition: all 2s ease-in;
-  padding: 5%;
-  background-color: #201e1e;
-  color: white;
-  border-radius: 25px;
-  border: 1px solid white;
-  -webkit-animation: easeIn 1s;
-          animation: easeIn 1s;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#alert-modal #close {
-  font-size: 1.3vmax;
-  background-color: white;
-  color: gray;
-  border-radius: 20px;
-  padding: 2% 5%;
+  #alert-modal {
+    height: 40%;
+    top: 130%;
+  }
+  #alert-modal #close {
+    font-size: 2vmax;
+  }
 }
 
 @-webkit-keyframes easeIn {
