@@ -106,20 +106,20 @@
                 <form id="contact-form-content">
                     <div id = "form-item"> 
                         <label for="firstname"> First name : </label>
-                        <input type="text" id="firstname" name="firstname">
+                        <input type="text" id="firstname" name="firstname" required>
                     </div>
                     <div id = "form-item">
                         <label for="lastname"> Last name </label>
-                        <input type="text" id="lastname" name="lastname">
+                        <input type="text" id="lastname" name="lastname" required>
                     </div>
                     <div id = "form-item">
                         <label for="email"> Email </label>
-                        <input type="text" id="email" name="email">
+                        <input type="text" id="email" name="email" required>
                     </div>
 
                     <div id = "form-item">
                         <label for="message"> Message </label>
-                        <textarea type="text" id="message" name="message"></textarea>
+                        <textarea type="text" id="message" name="message" required></textarea>
                     </div>
 
                     <button id= "submit-btn"type="submit">Send</button>
@@ -130,6 +130,12 @@
 
         </div>
 
+    </div>
+
+
+    <div id="alert-modal">
+        <p id="text"></p>
+        <button id="close">Close</button>
     </div>
         
 
@@ -146,8 +152,8 @@
         <div class="footer_navbar">
             <li><a href="./">Home</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./media.html">Media</a></li>
+            <li><a href="./shows.html">Gallery</a></li>
+            <li><a href="./video.html">Video</a></li>
             <li><a href="./contact.html">Contact</a></li>
         </div>
     </footer>    

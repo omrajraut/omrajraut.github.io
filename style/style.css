@@ -811,6 +811,53 @@ header .icon {
   }
 }
 
+#alert-modal {
+  display: none;
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  width: 40%;
+  height: 20%;
+  -webkit-transition: all 2s ease-in;
+  transition: all 2s ease-in;
+  padding: 5%;
+  background-color: #201e1e;
+  color: white;
+  border-radius: 25px;
+  border: 1px solid white;
+  -webkit-animation: easeIn 1s;
+          animation: easeIn 1s;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#alert-modal #close {
+  font-size: 1.3vmax;
+  background-color: white;
+  color: gray;
+  border-radius: 20px;
+  padding: 2% 5%;
+}
+
+@-webkit-keyframes easeIn {
+  0% {
+    -webkit-transform: translateY(50%);
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
 .headshots-container {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,5 +1,21 @@
 const contactForm = document.querySelector('#contact-form-content');
-const MESSAGE_ROUTE =  'http://localhost:4000/message';
+const MESSAGE_ROUTE =  'https://desolate-plains-55950.herokuapp.com/message';
+
+let alertModal = document.querySelector('#alert-modal');
+let alertModalText = document.querySelector('#alert-modal p');
+let alertModalBtn = document.querySelector('#alert-modal #close');
+
+
+const modalDisplayMessage = (msg) => {
+    alertModalText.textContent = msg;
+    alertModal.style.display = 'flex';
+    contactForm.reset();
+}
+
+alertModalBtn.onclick = e => {
+    alertModalText = "";
+    alertModal.style.display = 'none';
+}
 
 
 let formData;
@@ -21,14 +37,17 @@ contactForm.onsubmit = e => {
             'Content-type': 'application/json; charset=UTF-8'
         }
     })
-    .then(function (response) {
-        return response.json();
+    .then(function(response) {
+        console.log(response.status); // Will show you the status
+        if (!response.ok) {
+            modalDisplayMessage("Error please try again later!");
+            // throw new Error();
+        }
+        else{
+            modalDisplayMessage("Thanks for reaching out!, we'll contact you ASAP");
+        }
+        // return response.json();
+        return;
     })
-    .then(function (result) {
-        alert(result);
-    })
-    .catch (function (error) {
-        console.log('Request failed', error);
-    });
     
 }
