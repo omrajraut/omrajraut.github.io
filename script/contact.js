@@ -48,6 +48,6 @@ contactForm.onsubmit = e => {
     //     return;
     // })
 
-    modalDisplayMessage("Thanks for reaching out!, we'll contact you ASAP");
+    modalDisplayMessage("Thanks for reaching out!, I'll contact you ASAP.");
     
 }
