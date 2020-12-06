@@ -37,15 +37,17 @@ contactForm.onsubmit = e => {
             'Content-type': 'application/json; charset=UTF-8'
         }
     })
-    .then(function(response) {
-        // console.log(response.status); // Will show you the status
-        if (!response.ok) {
-            modalDisplayMessage("Error please try again later!");
-        }
-        else{
-            modalDisplayMessage("Thanks for reaching out!, we'll contact you ASAP");
-        }
-        return;
-    })
+    // .then(function(response) {
+    //     console.log(response.status); // Will show you the status
+    //     if (!response.ok) {
+    //         modalDisplayMessage("Error please try again later!");
+    //     }
+    //     else{
+    //         modalDisplayMessage("Thanks for reaching out!, we'll contact you ASAP");
+    //     }
+    //     return;
+    // })
+
     modalDisplayMessage("Thanks for reaching out!, we'll contact you ASAP");
+    
 }
