@@ -20,7 +20,6 @@ alertModalBtn.onclick = e => {
 
 let formData;
 contactForm.onsubmit = e => {
-    console.log("hey there!");
     e.preventDefault();
     formData = new FormData(contactForm);
 
@@ -39,16 +38,14 @@ contactForm.onsubmit = e => {
         }
     })
     .then(function(response) {
-        console.log(response.status); // Will show you the status
+        // console.log(response.status); // Will show you the status
         if (!response.ok) {
             modalDisplayMessage("Error please try again later!");
-            // throw new Error();
         }
         else{
             modalDisplayMessage("Thanks for reaching out!, we'll contact you ASAP");
         }
-        // return response.json();
         return;
     })
-    
+    modalDisplayMessage("Thanks for reaching out!, we'll contact you ASAP");
 }
