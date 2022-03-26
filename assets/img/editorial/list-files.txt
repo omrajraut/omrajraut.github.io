@@ -1,0 +1,9 @@
+"Editoralcopy.jpg",
+"Editorial_2174-2.jpg",
+"Editoriel.JPG",
+"edito_4097.JPG",
+"editorial-1.jpeg",
+"editorial-2.jpeg",
+"editorial-3.jpeg",
+"editorial-4.jpeg"
+list-files.txt

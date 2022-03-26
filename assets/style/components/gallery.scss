@@ -1,0 +1,112 @@
+// ================== gallery =====================
+
+
+.gallery {
+    header .right-container .links-box .link-social {
+        // filter: invert(54%) sepia(12%) saturate(1178%) hue-rotate(127deg) brightness(93%) contrast(91%);
+        // filter: invert(0%) sepia(6%) saturate(7500%) hue-rotate(328deg) brightness(103%) contrast(106%); 
+        filter : invert(60%) sepia(16%) saturate(1689%) hue-rotate(151deg) brightness(81%) contrast(93%);
+    }
+
+    header{
+        color : #3291b69a;
+        a{
+            color : #3291b69a;
+        }
+    }
+
+    header .left-container nav ul li a {
+        color : #3291b69a;
+    }
+
+    
+    header .right-container .city-name {
+        color :white !important;
+    }
+
+} 
+
+.gallery{
+    min-height: 100vh;
+
+    .gallery-headshot{
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img-container{
+            display: flex;
+            width: 100vw;
+            height: 100%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+    .gallery-content{
+        margin-bottom: 20vh;
+
+        .title{
+            width: 100;
+            height: 15vh;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            padding : 2vh 0;
+        }
+
+        .inner{
+            width : 100%;
+            display: flex;
+            justify-content: center;
+            .headshots img{
+                width: 25%;
+            }
+            .editorials img{
+                width: 25%;
+            }
+            .headshots, .editorials{
+                padding : 0 80px;
+                // max-width: 1700px;
+                // min-width: 80vw;
+
+                width: 80vw;
+                display: flex;
+                justify-content: center;
+                // width: 80vh;
+                // overflow-x: scroll;
+                flex-wrap: wrap;
+                img{
+                    height: 300px;
+                    
+                    object-fit: cover;
+                }
+            }
+        }
+
+        
+        
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    .gallery{
+        .gallery-content .inner{
+            .headshots, .editorials{
+                min-width: 0;
+                padding : 25px;
+                img{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

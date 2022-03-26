@@ -1,0 +1,137 @@
+/*----------------------About----------------------*/
+.about header .right-container .links-box .link-social {
+  -webkit-filter: invert(60%) sepia(16%) saturate(1689%) hue-rotate(151deg) brightness(81%) contrast(93%);
+          filter: invert(60%) sepia(16%) saturate(1689%) hue-rotate(151deg) brightness(81%) contrast(93%);
+}
+
+.about header a {
+  color: #3291b69a;
+}
+
+.about header .left-container nav ul li a {
+  color: #3291b69a;
+}
+
+.about header .right-cont168b5aainer .city-name {
+  color: #224d5e9a;
+}
+
+.about {
+  min-height: 100vh;
+}
+
+.about .about-headshot {
+  height: 80vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-headshot .img-container {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about .about-headshot .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .about-content {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.about .about-content .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+}
+
+.about .about-content .left-section {
+  max-height: 800px;
+  padding: 20px;
+  width: 50%;
+}
+
+.about .about-content .left-section .img-container {
+  height: 100%;
+  width: 100%;
+}
+
+.about .about-content .left-section .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .about-content .right-section {
+  width: 50%;
+  height: 100%;
+  padding: 5px;
+  line-height: 1.5em;
+  padding: 20px;
+}
+
+.about .about-content .right-section .about-paragraph .paragraph-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-content .right-section .about-paragraph .paragraph-title h2 {
+  text-align: center;
+  padding: 20px 5px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 3px;
+}
+
+.about .about-content .right-section .about-paragraph .paragraph-content {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .about-content .inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-content .inner .left-section {
+    margin-bottom: 50px;
+  }
+  .about-content .inner .left-section, .about-content .inner .right-section {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=about.css.map */

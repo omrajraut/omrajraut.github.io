@@ -1,0 +1,68 @@
+.media header a {
+  color: black;
+}
+
+.media {
+  height: 100vh;
+}
+
+.media .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10vh;
+}
+
+.media .container .inner {
+  margin-top: 20vh;
+  width: 80%;
+  max-width: 1500px;
+}
+
+.media .container .inner .title {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.media .container .inner .title hr {
+  margin: 20px auto;
+  margin-bottom: 20px;
+  max-width: 1500px;
+  border: 1px #71724d solid;
+}
+
+.media .container .inner .title h2 {
+  font-size: 4em;
+  letter-spacing: 0.3em;
+}
+
+.media .container .inner .title h3 {
+  font-size: 2em;
+  letter-spacing: 0.2em;
+}
+
+.media .container .inner .title span {
+  margin-bottom: 100px;
+}
+
+.media .container .inner .main {
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.media .container .inner .main .vid-container {
+  height: 70vh;
+}
+/*# sourceMappingURL=media.css.map */

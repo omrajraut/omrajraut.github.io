@@ -1,0 +1,123 @@
+ /*----------------------About----------------------*/
+
+
+ .about {
+    header .right-container .links-box .link-social {
+        // filter: invert(54%) sepia(12%) saturate(1178%) hue-rotate(127deg) brightness(93%) contrast(91%);
+        // filter: invert(0%) sepia(6%) saturate(7500%) hue-rotate(328deg) brightness(103%) contrast(106%); 
+        filter : invert(60%) sepia(16%) saturate(1689%) hue-rotate(151deg) brightness(81%) contrast(93%);
+    }
+
+    header{
+        a{
+            color : #3291b69a;
+        }
+    }
+
+    header .left-container nav ul li a {
+        color : #3291b69a;
+    }
+
+    
+    header .right-cont168b5aainer .city-name {
+        color :#224d5e9a;
+    }
+
+} 
+
+.about{
+    min-height: 100vh;
+    .about-headshot{
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img-container{
+            width: 100vw;
+            height: 100%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .about-content{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        .inner{
+            display: flex;
+            max-width: 1000px;
+        }
+
+        
+        .left-section{
+            max-height: 800px;
+            padding : 20px;
+            width: 50%;
+            .img-container{
+                height: 100%;
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            
+        }
+
+        .right-section{
+            width: 50%;
+            height: 100%;
+            padding : 5px;
+            line-height: 1.5em;
+            padding : 20px;
+            .about-paragraph{
+
+                .paragraph-title{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center ;
+                    
+                    h2{
+                        text-align: center;
+                        padding : 20px 5px;
+                        width: 100%;
+                        text-transform: uppercase;
+                        font-size: 2em;
+                        letter-spacing: 3px;
+                    }
+
+                }
+
+                .paragraph-content{
+                    padding : 20px;
+                }
+
+            }
+            
+        }
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    .about-content .inner{
+        flex-direction: column;
+        .left-section{
+            margin-bottom: 50px;
+        }
+        .left-section, .right-section{
+            width: 100%;
+            // border : 2px solid red;
+        }
+    }
+}

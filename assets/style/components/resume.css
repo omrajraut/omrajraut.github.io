@@ -1,0 +1,171 @@
+/*----------------------Resume----------------------*/
+.resume header {
+  width: 100%;
+  position: relative;
+}
+
+.resume header a {
+  color: black;
+}
+
+.resume header .left-container nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.resume {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.resume .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume .container .inner {
+  width: 80%;
+  max-width: 1500px;
+}
+
+.resume .container .inner .title {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.resume .container .inner .title hr {
+  margin: 30px auto;
+  margin-bottom: 30px;
+  max-width: 1500px;
+  border: 1px #71724d solid;
+}
+
+.resume .container .inner .title h2 {
+  letter-spacing: 0.3em;
+  font-size: 4em;
+}
+
+.resume .container .inner .title span {
+  margin-bottom: 100px;
+}
+
+.resume .container .inner .main {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.resume .container .inner .main .left-div, .resume .container .inner .main .right-div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resume .container .inner .main .img-container {
+  height: 110vh;
+  width: 100%;
+}
+
+.resume .container .inner .main .img-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.resume .container .inner .main .button-container {
+  padding-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resume .container .inner .main .button {
+  padding: 20px;
+  letter-spacing: 0.15em;
+  background-color: rgba(190, 70, 33, 0.685);
+  color: white;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.resume .under-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0;
+}
+
+.resume .under-main .social-links {
+  margin-bottom: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume .under-main .social-links img {
+  width: 200px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .resume .container .inner .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .resume .container .inner .main .left-section {
+    margin-bottom: 50px;
+  }
+  .resume .container .inner .main .left-div {
+    margin-bottom: 5vh;
+  }
+  .resume .container .inner .main .left-div, .resume .container .inner .main .right-div {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=resume.css.map */

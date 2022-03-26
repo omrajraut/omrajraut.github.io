@@ -1,0 +1,53 @@
+ /*----------------Home -------------------*/
+
+
+ .home{
+    //  background-color: rgb(219, 214, 184);
+
+     .homepage-headshot{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img-container{
+            width: 100vw;
+            height: 100vh;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+            }
+        }
+        
+    }
+ }
+
+ 
+    
+
+    /* ----------------- Header specific style for HOME -------------- */
+
+    .home {
+        header .right-container .links-box .link-social {
+            filter: invert(99%) sepia(1%) saturate(2328%) hue-rotate(135deg) brightness(118%) contrast(100%);
+        }
+    
+        header{
+            a{
+                color : white;
+            }
+        }
+
+        header .left-container nav ul li a {
+            color: white;
+        }
+
+        
+        header .right-container .city-name {
+            color :rgb(255, 255, 255);
+        }
+
+    } 
+    

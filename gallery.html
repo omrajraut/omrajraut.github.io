@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Raj Raut</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+
+  <style>
+      .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  </style>
+
+
+
+<body class="gallery">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <header>
+        <div class="header-inner">
+    
+    
+            <div class="left-container">
+                <div class="header-name">
+                    <a href="/">OM RAJ RAUT</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+    
+                        <li>
+                            <a href="/about.html">About</a>
+                        </li>
+    
+                        <li>
+                            <a href="/resume.html">Resume</a>
+                        </li>
+    
+                        <li>
+                            <a href="/gallery.html">Gallery</a>
+                        </li>
+    
+                        <li>
+                            <a href="/media.html">Media</a>
+                        </li>
+    
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+    
+                </nav>
+    
+            </div>
+    
+            <div class="right-container">
+                <div class="city-name">NEW YORK CITY</div>
+    
+                <div class="links-box">
+    
+                    <div class="img-outer link-social">
+                        <a href="mailto:omrajraut480@gmail.com"> <img src="assets/icons/email_icon.svg" height="30"
+                                width="35" /></a>
+                    </div>
+                    <div class="img-outer link-social">
+                        <a href="https://www.imdb.me/omrajraut"><img src="assets/icons/imbd_icon.svg" height="30"
+                                width="35" /></a>
+    
+                    </div>
+                    <div class="img-outer link-social">
+                        <a href="https://www.instagram.com/omraj_raut/"><img src="assets/icons/instagram_icon.svg"
+                                height="30" width="35" /></a>
+                    </div>
+                    <div class="img-outer link-social">
+                        <a href="https://resumes.actorsaccess.com/omrajraut "> <img class="link"
+                                src="assets/icons/link_icon.svg" height="30" width="35" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="header-mobile">
+        <a href="/">OM RAJ RAUT</a>
+    </div>
+    
+    <div class="nav-button">
+        <img src="./assets/icons/Hamburger_icon_white.svg" alt="">
+    </div>
+    
+    
+    <div class="nav-mobile">
+        <div class="navbar-mob-options">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+    
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+    
+                <li>
+                    <a href="/resume.html">Resume</a>
+                </li>
+    
+                <li>
+                    <a href="/gallery.html">Gallery</a>
+                </li>
+    
+                <li>
+                    <a href="/media.html">Media</a>
+                </li>
+    
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    
+        <div class="close-sec">
+            <div class="close-btn-wrapper"> 
+                <img src="./assets/icons/VisualEditor_-_Icon_-_Close_-_white.svg" alt="">
+            </div>
+        </div>
+    
+    </div>
+    
+    <script src="./assets/js/navbar.js"></script>
+    
+
+   
+    <div class="gallery-headshot">
+        <div class="img-container">
+            <img src="/assets/img/editorial/Editorial_2174-2.jpg" alt=""> 
+        </div>
+        <!-- <div class="gallery-title">Gallery</div> -->
+    </div>
+
+    <div class="gallery-content">
+
+
+        <div class="title">
+            <h2>Headshots</h2>
+            <span>Click any image for larger view</span>
+
+        </div>
+
+        <div class="inner">
+          
+          <section class="headshots">
+
+
+
+          </section>
+            
+        </div>
+
+        <div class="title">
+          <h2>Editorials</h2>
+          <span>Click any image for larger view</span>
+
+        </div>
+
+        <div class="inner">
+          
+          <section class="editorials">
+
+
+
+          </section>
+            
+        </div>
+
+    </div>
+
+        <footer>
+            <p class="intro-header"> <span>OM</span> RAJ RAUT | NEW <span>YORK</span></p>
+                   
+            <div class="links-box">
+                
+                 <div class="img-outer link-social">
+                    <a href="mailto:omrajraut480@gmail.com"> <img src="assets/icons/email_icon.svg" height="30" width="35" /></a>
+                </div>
+                <div class="img-outer link-social">
+                    <a href="https://www.imdb.me/omrajraut"><img src="assets/icons/imbd_icon.svg" height="30" width="35" /></a>
+                    
+                </div>
+                <div class="img-outer link-social">
+                    <a href="https://www.instagram.com/omraj_raut/"><img src="assets/icons/instagram_icon.svg" height="30" width="35" /></a>
+                </div>
+                <div class="img-outer link-social">
+                    <a href="https://resumes.actorsaccess.com/omrajraut ">                <img class="link" src="assets/icons/link_icon.svg" height="30" width="35" /></a>
+                </div>
+            </div>
+            <p class="intro"> Copyright © 2022 OM RAJ RAUT. All rights reserved.</p>
+    
+        </footer>
+
+
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+
+        headshots_img_container = ".gallery-content .inner .headshots"
+        editorials_img_container = ".gallery-content .inner .editorials"
+
+        headshots_img_container_object = document.querySelector(headshots_img_container);
+        editorials_img_container_object = document.querySelector(editorials_img_container);
+
+
+        headshots_folder_location = "/assets/img/headshots/"
+        editorial_folder_location = "/assets/img/editorial/"
+
+
+        hs_list = [ "1Headshot.jpg",
+                    "about-headshot.jpg",
+                    // "edito_4097.JPG",
+                    // "Editoralcopy.jpg",
+                    // "Editorial_2174-2.jpg",
+                    "Editoriel.JPG",
+                    "Headshot4.jpg",
+                    "HomePage.jpg",
+                    "resume-headshot.jpg"
+                    ]
+
+
+        editorial_list = ["Editoralcopy.jpg",
+                          "Editorial_2174-2.jpg",
+                          "edito_4097.JPG",
+                          "editorial-1.jpeg",
+                          "editorial-2.jpeg",
+                          "editorial-3.jpeg",
+                          "editorial-4.jpeg"
+                        ]
+
+        hs_list.forEach( (img) => {
+            //insert the img in the img_container_object
+
+            let img_e = document.createElement("img")
+            img_e.src = headshots_folder_location + img;
+
+            headshots_img_container_object.appendChild(img_e)
+            img_e.classList.add("to-be-intense");
+
+        })
+        
+        editorial_list.forEach( img => {
+          let img_e = document.createElement("img")
+            img_e.src = editorial_folder_location + img;
+
+            editorials_img_container_object.appendChild(img_e)
+            img_e.classList.add("to-be-intense");
+        })
+
+
+        
+
+      let body = document.querySelector('.gallery');
+      let modal = document.getElementById("myModal");
+			let elements = document.querySelectorAll( '.to-be-intense' );
+
+      elements.forEach( c => {
+            c.onclick = (e) => {
+                let modalImg = document.getElementById("img01");
+                c.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+      }})
+            let span = document.getElementsByClassName("close")[0];
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+
+
+
+    </script>
+</body>
+</html>
