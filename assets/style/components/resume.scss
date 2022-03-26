@@ -63,9 +63,12 @@
                     height: 110vh;
                     width: 100%;
                     img{
-                        height: 100%;
+                        height: auto;
                         width: 100%;
                         object-fit: cover;
+                        // overflow: hidden;
+                        // border : 2px solid red;
+                        max-height: 100vh
                     }
                 }
 
@@ -115,15 +118,30 @@
 @media only screen and (max-width: 640px) {
     .resume .container .inner .main{
         flex-direction: column-reverse;
-        .left-section{
-            margin-bottom: 50px;
-        }
-        .left-div{
-            margin-bottom: 5vh;
-        }
+        // .left-section{
+        //     margin-bottom: 50px;
+        // }
+        // .left-div{
+        //     margin-bottom: 5vh;
+        // }
         .left-div, .right-div{
+            display: flex;
+            justify-content: space-evenly;
+            .img-container {
+                height: auto;
+            }
+            .button-container{
+                // border : 2px solid yellow;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .resume-wrapper{
+                // border : 2px solid green;
+            }
             width: 100%;
             // border : 2px solid red;
+
         }
     }
 }
