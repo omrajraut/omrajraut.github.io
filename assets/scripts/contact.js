@@ -1,5 +1,5 @@
 const contactForm = document.querySelector('#form');
-const MESSAGE_ROUTE =  'https://desolate-plains-55950.herokuapp.com/message';
+const MESSAGE_ROUTE =  'https://email-server-om.herokuapp.com/message';
 
 // let alertModal = document.querySelector('#alert-modal');
 // let alertModalText = document.querySelector('#alert-modal p');

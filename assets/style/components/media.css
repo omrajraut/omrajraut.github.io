@@ -60,9 +60,19 @@
   padding-top: 100px;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .media .container .inner .main .vid-container {
-  height: 70vh;
+  height: 60vh;
+  width: 50vw;
 }
 /*# sourceMappingURL=media.css.map */

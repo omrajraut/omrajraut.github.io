@@ -53,8 +53,12 @@
           height: 100%;
           // border : 2px green solid;
           // background-color: red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           .vid-container{
-            height: 70vh;
+            height: 60vh;
+            width: 50vw;
           }
         }
       }
