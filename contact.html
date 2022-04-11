@@ -11,12 +11,6 @@
 
     
     
-    <script>
-        fetch('https://email-server-om.herokuapp.com/')
-      .then(response => response.json())
-      .then(data => console.log(data));
-      
-    </script>
     <link rel="stylesheet" href="./assets/style/style.css">
     <header>
         <div class="header-inner">
@@ -162,11 +156,11 @@
                             <div class="form-item-2">
                                 <div class = "form-item-2-i"> 
                                     <label for="firstname"> First name </label>
-                                    <input type="text" class="firstname" name="firstname" required>
+                                    <input id="firstname" type="text" class="firstname" name="firstname" required>
                                 </div>
                                 <div class = "form-item-2-i">
                                     <label for="lastname"> Last name </label>
-                                    <input type="text" class="lastname" class="lastname" required>
+                                    <input id="lastname" type="text" class="lastname" class="lastname" required>
                                 </div>
                             </div>
         

@@ -1,5 +1,10 @@
 const contactForm = document.querySelector('#form');
-const MESSAGE_ROUTE =  'https://email-server-om.herokuapp.com/message';
+const ENV = 'prod'
+
+const MESSAGE_ROUTE =  ENV == 'dev' ? 'http://localhost:4000/message' : 'https://email-server-om.herokuapp.com/message';
+
+
+console.log(MESSAGE_ROUTE)
 
 // let alertModal = document.querySelector('#alert-modal');
 // let alertModalText = document.querySelector('#alert-modal p');
@@ -37,24 +42,12 @@ contactForm.onsubmit = e => {
             'Content-type': 'application/json; charset=UTF-8'
         }
     }).then(() => {
-        console.log("Thanks for reaching, I will reach out as soon as possible!")
+        alert("Thanks for reaching, I will reach out as soon as possible!")
         contactForm.reset();
     })
     .catch(()=>{
         alert("Sorry, couldn't reach to Om right Raj now, please try again later or email me to omrajraut480@gmail.com")
         // contactForm.reset();
     })
-    // .then(function(response) {
-    //     console.log(response.status); // Will show you the status
-    //     if (!response.ok) {
-    //         modalDisplayMessage("Error please try again later!");
-    //     }
-    //     else{
-    //         modalDisplayMessage("Thanks for reaching out!, we'll contact you ASAP");
-    //     }
-    //     return;
-    // })
-
-    // modalDisplayMessage("Thanks for reaching out!, I'll contact you ASAP.");
     
 }
