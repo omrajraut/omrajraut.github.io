@@ -1,10 +1,29 @@
 
 .media {
   header {
+    width: 100%;
+    position: relative;
+    color: rgba(255, 255, 255, 0.825);
+    background-color: rgb(40, 87, 174);
+
     a {
-      color : black;
+        color: rgba(255, 255, 255, 0.825);
+
     }
-  }
+    .left-container nav ul li a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.825);
+
+    }
+
+    .right-container .links-box .link-social {
+        // filter: invert(99%) sepia(1%) saturate(2328%) hue-rotate(135deg) brightness(118%) contrast(100%);
+        // filter: invert(80%) sepia(100%) saturate(500%) hue-rotate(180deg);
+        filter: invert(100%) brightness(100%);
+        opacity: 0.825;
+    }
+
+}
 }
 
 .media {
@@ -15,44 +34,42 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 10vh;
-      .inner {
-        margin-top: 20vh;
-        width: 80%;
-        max-width: 1500px;
+
+      .top {
+        width: 100vw;
 
         .title{
             text-align: center;
             width: 100%;
-            margin-top : 50px;
-
-            hr{
-                margin : 20px auto;
-                margin-bottom: 20px;
-                max-width: 1500px;
-                border : 1px rgb(113, 114, 77) solid;
-            }
+            padding: 5vh;
+            background-color: rgb(40, 87, 174);
+            color: white;
 
             h2{
-                font-size: 4em;
                 letter-spacing: 0.3em;
+                font-size: 3em;
             }
-            h3{
-              font-size: 2em;
-              letter-spacing: 0.2em;
-            }
-            
-            span{
-                margin-bottom : 100px;
-            }
-
         }
 
+        .subtitle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3em;
+            letter-spacing: 0.3em;
+        }
+
+    }
+
+      .wrapper-1 {
+        // margin-top: 20vh;
+        width: 80%;
+        max-width: 1500px;
+
         .main{
-          padding-top : 100px;
           width: 100%;
           height: 100%;
-          // border : 2px green solid;
-          // background-color: red;
+
           display: flex;
           justify-content: center;
           align-items: center;
@@ -62,6 +79,44 @@
           }
         }
       }
+
+      .wrapper-2{
+        padding : 2em;
+        width: 80%;
+        max-width: 1500px;
+
+        .clips-title{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 3em;
+          letter-spacing: 0.3em;
+        }
+
+        .clips{
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          justify-content: center;
+          gap: 10px;
+
+          .clip-item{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            iframe, p{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 1em;
+            }
+          }
+          
+        }
+      }
+
     }
 
     // footer {

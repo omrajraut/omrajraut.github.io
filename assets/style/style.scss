@@ -26,6 +26,11 @@
     src: url("/assets/fonts/literal/Literal_Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: lt_wave;
+    src: url("/assets/fonts/lt_wave/LTWaveText-Medium.otf") format("opentype");
+}
+
 
 
 
@@ -33,7 +38,7 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   font-family: avenir-book;
+   font-family: lt_wave;
 }
 
 @import "components/navbar";

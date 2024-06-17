@@ -9,94 +9,111 @@
 </head>
 
 <style>
-     .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
-  
-  /* Caption of Modal Image */
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-  }
-  
-  /* Add Animation */
-  .modal-content, #caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
     }
-  }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content,
+    #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+    }
 </style>
 
 
 <body class="resume">
 
-    
-    
     <link rel="stylesheet" href="./assets/style/style.css">
     <header>
         <div class="header-inner">
-    
-    
+
             <div class="left-container">
                 <div class="header-name">
                     <a href="/">OM RAJ RAUT</a>
@@ -106,35 +123,35 @@
                         <li>
                             <a href="/">Home</a>
                         </li>
-    
+
                         <li>
                             <a href="/about.html">About</a>
                         </li>
-    
+
                         <li>
                             <a href="/resume.html">Resume</a>
                         </li>
-    
+
                         <li>
                             <a href="/gallery.html">Gallery</a>
                         </li>
-    
+
                         <li>
                             <a href="/media.html">Media</a>
                         </li>
-    
+
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
-    
+
                 </nav>
-    
+
             </div>
-    
+
             <div class="right-container">
-                <div class="city-name">NEW YORK CITY</div>
-    
+                <div class="city-name"> ACTOR | NEW YORK CITY</div>
+
                 <div class="links-box">
-    
+
                     <div class="img-outer link-social">
                         <a href="mailto:omrajraut480@gmail.com"> <img src="assets/icons/email_icon.svg" height="30"
                                 width="35" /></a>
@@ -142,153 +159,178 @@
                     <div class="img-outer link-social">
                         <a href="https://www.imdb.me/omrajraut"><img src="assets/icons/imbd_icon.svg" height="30"
                                 width="35" /></a>
-    
+
                     </div>
                     <div class="img-outer link-social">
                         <a href="https://www.instagram.com/omraj_raut/"><img src="assets/icons/instagram_icon.svg"
                                 height="30" width="35" /></a>
                     </div>
                     <div class="img-outer link-social">
-                        <a href="https://resumes.actorsaccess.com/omrajraut "> <img class="link"
-                                src="assets/icons/link_icon.svg" height="30" width="35" /></a>
+                        <a href="https://vimeo.com/user213916117"> <img class="link" src="assets/icons/vimeo.svg"
+                                height="30" width="35" /></a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    
+
     <div class="header-mobile">
         <a href="/">OM RAJ RAUT</a>
     </div>
-    
+
     <div class="nav-button">
         <img src="./assets/icons/Hamburger_icon_white.svg" alt="">
     </div>
-    
-    
+
+
     <div class="nav-mobile">
         <div class="navbar-mob-options">
             <ul>
                 <li>
                     <a href="/">Home</a>
                 </li>
-    
+
                 <li>
                     <a href="/about.html">About</a>
                 </li>
-    
+
                 <li>
                     <a href="/resume.html">Resume</a>
                 </li>
-    
+
                 <li>
                     <a href="/gallery.html">Gallery</a>
                 </li>
-    
+
                 <li>
                     <a href="/media.html">Media</a>
                 </li>
-    
+
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </div>
-    
+
         <div class="close-sec">
-            <div class="close-btn-wrapper"> 
+            <div class="close-btn-wrapper">
                 <img src="./assets/icons/VisualEditor_-_Icon_-_Close_-_white.svg" alt="">
             </div>
         </div>
-    
+
     </div>
-    
+
     <script src="./assets/js/navbar.js"></script>
-    
+
     <div class="container">
 
-        <div class="inner">
+        <div class="top">
             <div class="title">
                 <h2>RESUME</h2>
-                <hr width="100%" color="black">
-                <span>Need a copy? Keep a copy. Download headshot + resume using the buttons below</span>
             </div>
-    
-    
-    
+
+            <div class="subtitle">
+
+                <span>Need a copy? Keep a copy. Download headshot + resume using the buttons below</span>
+
+                <span>You can also find Om Raj here: </span>
+                <div class="social-links-tray">
+
+                    <div class="socials-wrapper-item">
+                        <a href="https://imdb.me/omrajraut">
+                            <img src="./assets/icons/imdb_logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="socials-wrapper-item">
+                        <a href="https://resumes.actorsaccess.com/omrajraut">
+                            <img src="./assets/icons/actors_access.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="socials-wrapper-item">
+                        <a href="https://resumes.actorsaccess.com/omrajraut">
+                            <img src="./assets/icons/backstage_logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="socials-wrapper-item">
+                        <a href="https://resumes.actorsaccess.com/omrajraut">
+                            <img src="./assets/icons/vimeo-logo.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="inner">
+
             <div class="main">
-    
+
                 <div class="left-div">
                     <div class="resume-wrapper">
                         <div class="img-container">
-                           <img class="to-be-intense" src="./assets/img/resume-pic.JPG" alt="">
+                            <img class="to-be-intense" src="./assets/img/resume-img.jpg" alt="">
                         </div>
                     </div>
                     <div class="button-container">
-                        <a class="button" download="om-raj-resume.pdf" href="./assets/docs/om_raj_raut_resume.pdf" title="ImageName">
+                        <a class="button" download="om-raj-resume.pdf" href="./assets/docs/resume.pdf"
+                            title="ImageName">
                             DOWNLOAD RESUME
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="right-div">
                     <div class="headshoot-resume">
                         <div class="img-container">
-                            <img class="to-be-intense" src="./assets/img/headshots/1Headshot.jpg" alt="">
+                            <img class="to-be-intense" src="./assets/img/headshots/RESUME-HS.jpg" alt="">
                         </div>
                     </div>
                     <div class="button-container">
-                        <a class="button" download="om-raj-headshot.jpg" href="./assets/img/headshots/1Headshot.jpg" title="ImageName">
+                        <a class="button" download="om-raj-headshot.jpg" href="./assets/img/headshots/1Headshot.jpg"
+                            title="ImageName">
                             DOWNLOAD HEADSHOT
                         </a>
                     </div>
                 </div>
+                
             </div>
         </div>
 
 
 
-        <div class="under-main">
-            <hr size="`px" width="80%" color="gray">
-            <br>
-            <br>
-            <span>You can also find Om Raj here: </span>
-            <div class="social-links">
-                <!-- <img src="./assets/icons/BACKSTAGE_USE.png" alt=""> -->
-                <a href="https://imdb.me/omrajraut"> 
-                    <img src="./assets/icons/BG_rectangle._CB1509060989_SY230_SX307_AL_.png" alt="">
-                </a>
-               
-                <a href="https://resumes.actorsaccess.com/omrajraut">
-                    <img src="./assets/icons/ACTORS_ACCESS_USE.png" alt="">
-                </a>
 
-            </div>
-            <hr size="`px" width="80%" color="gray">
-        </div>
     </div>
 
-        <footer>
-            <p class="intro-header"> <span>OM</span> RAJ RAUT | NEW <span>YORK</span></p>
-                   
-            <div class="links-box">
-                
-                 <div class="img-outer link-social">
-                    <a href="mailto:omrajraut480@gmail.com"> <img src="assets/icons/email_icon.svg" height="30" width="35" /></a>
-                </div>
-                <div class="img-outer link-social">
-                    <a href="https://www.imdb.me/omrajraut"><img src="assets/icons/imbd_icon.svg" height="30" width="35" /></a>
-                    
-                </div>
-                <div class="img-outer link-social">
-                    <a href="https://www.instagram.com/omraj_raut/"><img src="assets/icons/instagram_icon.svg" height="30" width="35" /></a>
-                </div>
-                <div class="img-outer link-social">
-                    <a href="https://resumes.actorsaccess.com/omrajraut ">                <img class="link" src="assets/icons/link_icon.svg" height="30" width="35" /></a>
-                </div>
+    <footer>
+        <p class="intro-header"> <span>OM</span> RAJ RAUT | NEW <span>YORK</span></p>
+
+        <div class="links-box">
+
+            <div class="img-outer link-social">
+                <a href="mailto:omrajraut480@gmail.com"> <img src="assets/icons/email_icon.svg" height="30"
+                        width="35" /></a>
             </div>
-            <p class="intro"> Copyright © 2022 OM RAJ RAUT. All rights reserved.</p>
-    
-        </footer>
-    
+            <div class="img-outer link-social">
+                <a href="https://www.imdb.me/omrajraut"><img src="assets/icons/imbd_icon.svg" height="30"
+                        width="35" /></a>
+
+            </div>
+            <div class="img-outer link-social">
+                <a href="https://www.instagram.com/omraj_raut/"><img src="assets/icons/instagram_icon.svg" height="30"
+                        width="35" /></a>
+            </div>
+            <div class="img-outer link-social">
+                <a href="https://vimeo.com/user213916117"> <img class="link" src="assets/icons/vimeo.svg" height="30"
+                        width="35" /></a>
+            </div>
+        </div>
+        <p class="intro"> Copyright © 2024 OM RAJ RAUT. All rights reserved.</p>
+
+    </footer>
+
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
@@ -296,22 +338,23 @@
     </div>
 
     <script>
-      let body = document.querySelector('.gallery');
-      let modal = document.getElementById("myModal");
-			let elements = document.querySelectorAll( '.to-be-intense' );
+        let body = document.querySelector('.gallery');
+        let modal = document.getElementById("myModal");
+        let elements = document.querySelectorAll('.to-be-intense');
 
-      elements.forEach( c => {
+        elements.forEach(c => {
             c.onclick = (e) => {
                 let modalImg = document.getElementById("img01");
-                c.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
+                c.onclick = function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
             }
-      }})
-            let span = document.getElementsByClassName("close")[0];
-            span.onclick = function() { 
-                modal.style.display = "none";
-            }
+        })
+        let span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
     </script>
 
 </body>
