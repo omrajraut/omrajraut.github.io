@@ -1,11 +1,12 @@
   /*----------------------Resume----------------------*/
   .resume{
-    header {
+    .header {
 
         width: 100%;
         position: relative;
         color: rgba(255, 255, 255, 0.825);
-        background-color: rgb(40, 87, 174);
+        // background-color: rgb(40, 87, 174);
+        background-color: rgb(18, 119, 147);
 
         a {
             color: rgba(255, 255, 255, 0.825);
@@ -17,12 +18,22 @@
 
         }
 
-        .right-container .links-box .link-social {
-            // filter: invert(99%) sepia(1%) saturate(2328%) hue-rotate(135deg) brightness(118%) contrast(100%);
-            // filter: invert(80%) sepia(100%) saturate(500%) hue-rotate(180deg);
-            filter: invert(100%) brightness(100%);
-            opacity: 0.825;
+        .right-container {
+
+            .city-name{
+                color: rgba(255, 255, 255, 0.825);
+                font-size: .7em;
+            }
+
+            .links-box .link-social {
+                // filter: invert(99%) sepia(1%) saturate(2328%) hue-rotate(135deg) brightness(118%) contrast(100%);
+                // filter: invert(80%) sepia(100%) saturate(500%) hue-rotate(180deg);
+                filter: invert(100%) brightness(100%);
+                opacity: 0.825;
+            }
         }
+        
+
 
     }
   }
@@ -44,7 +55,8 @@
                 text-align: center;
                 width: 100%;
                 padding: 5vh;
-                background-color: rgb(40, 87, 174);
+                // background-color: rgb(40, 87, 174);
+                background-color: rgb(18, 119, 147);
                 color: white;
 
                 h2{
@@ -101,11 +113,17 @@
                     flex-direction: column;
                 }
 
+                .left-div, .right-div{
+                    padding: 5vh;
+                    // border : 2px solid red;
+                }
+
                 .img-container {
-                    height: 110vh;
+                    min-height: 100vh;
                     width: 100%;
+                    // border : 2px solid red;
                     img{
-                        height: auto;
+                        // height: auto;
                         width: 100%;
                         object-fit: cover;
                         // overflow: hidden;
@@ -124,7 +142,9 @@
                 .button{
                     padding : 20px;
                     letter-spacing: 0.15em;
-                    background-color: rgb(40, 87, 174);
+                    // background-color: rgb(40, 87, 174);
+                    background-color: rgb(18, 119, 147);
+
                     color : white;
                     cursor: pointer;
                     border : none;

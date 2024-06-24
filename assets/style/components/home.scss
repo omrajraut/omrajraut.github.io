@@ -30,26 +30,35 @@
     /* ----------------- Header specific style for HOME -------------- */
 
     .home {
-        header .right-container .links-box .link-social {
-            // filter: invert(99%) sepia(1%) saturate(2328%) hue-rotate(135deg) brightness(118%) contrast(100%);
-            // filter: invert(80%) sepia(100%) saturate(500%) hue-rotate(180deg);
-            filter: invert(75%) sepia(24%) saturate(748%) hue-rotate(164deg) brightness(95%) contrast(92%);
+        .index-header .header-inner .links-box-wrapper 
+        .links-box {
+            // border : 1px solid yellow;
+
+            .link-social {
+                // filter: invert(99%) sepia(1%) saturate(2328%) hue-rotate(135deg) brightness(118%) contrast(100%);
+                // filter: invert(80%) sepia(100%) saturate(500%) hue-rotate(180deg);
+                // border : 1px solid red;
+                // filter: invert(38%) sepia(56%) saturate(724%) hue-rotate(158deg) brightness(88%) contrast(89%);
+                // filter: invert(40%) sepia(65%) saturate(600%) hue-rotate(155deg) brightness(90%) contrast(85%);
+                filter: invert(27%) sepia(96%) saturate(423%) hue-rotate(156deg) brightness(93%) contrast(87%);
+
+            }
 
         }
     
-        header{
+        .index-header{
             a{
-                color :rgb(107, 195, 222);
+                color :rgb(18, 119, 147);
             }
         }
 
-        header .left-container nav ul li a {
-            color :rgb(107, 195, 222);
+        .index-header nav ul li a {
+            color :rgb(15, 93, 114);
         }
 
         
-        header .right-container .city-name {
-            color :rgb(107, 195, 222);
+        .index-header .city-name {
+            color :rgb(18, 119, 147);
         }
 
     } 

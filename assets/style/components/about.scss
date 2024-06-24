@@ -2,26 +2,30 @@
 
 
  .about {
-    header .right-container .links-box .link-social {
+    .header .right-container .links-box .link-social {
         // filter: invert(54%) sepia(12%) saturate(1178%) hue-rotate(127deg) brightness(93%) contrast(91%);
         // filter: invert(0%) sepia(6%) saturate(7500%) hue-rotate(328deg) brightness(103%) contrast(106%); 
         filter : invert(60%) sepia(16%) saturate(1689%) hue-rotate(151deg) brightness(81%) contrast(93%);
     }
 
-    header{
+    .header{
         a{
-            color : #3291b69a;
+            // color : #3291b69a;
+            color :rgb(18, 119, 147);
         }
     }
 
-    header .left-container nav ul li a {
-        color : #3291b69a;
+    .header .left-container nav ul li a {
+        // color : #3291b69a;
+        color :rgb(18, 119, 147);
     }
 
     
-    header .right-cont168b5aainer .city-name {
-        color :#224d5e9a;
-    }
+    .header .right-container .city-name{
+        // color : #3291b69a;
+        color :rgb(18, 119, 147);
+        font-size: .7em;
+      }
 
 } 
 
@@ -54,13 +58,15 @@
         .inner{
             display: flex;
             max-width: 80vw;
+            // border : 2px solid red;
         }
 
         
         .left-section{
-            max-height: 800px;
-            padding : 20px;
+            // max-height: 800px;
+            // padding : 20px;
             width: 50%;
+            padding: 5vw;
             .img-container{
                 height: 100%;
                 width: 100%;

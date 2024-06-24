@@ -18,15 +18,15 @@
 }
 
 /* ----------------- Header specific style for HOME -------------- */
-.home header .right-container .links-box .link-social {
-  filter: invert(75%) sepia(24%) saturate(748%) hue-rotate(164deg) brightness(95%) contrast(92%);
+.home .index-header .header-inner .links-box-wrapper .links-box .link-social {
+  filter: invert(27%) sepia(96%) saturate(423%) hue-rotate(156deg) brightness(93%) contrast(87%);
 }
-.home header a {
-  color: rgb(107, 195, 222);
+.home .index-header a {
+  color: rgb(18, 119, 147);
 }
-.home header .left-container nav ul li a {
-  color: rgb(107, 195, 222);
+.home .index-header nav ul li a {
+  color: rgb(15, 93, 114);
 }
-.home header .right-container .city-name {
-  color: rgb(107, 195, 222);
+.home .index-header .city-name {
+  color: rgb(18, 119, 147);
 }/*# sourceMappingURL=home.css.map */

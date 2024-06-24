@@ -1,15 +1,16 @@
 /*----------------------About----------------------*/
-.about header .right-container .links-box .link-social {
+.about .header .right-container .links-box .link-social {
   filter: invert(60%) sepia(16%) saturate(1689%) hue-rotate(151deg) brightness(81%) contrast(93%);
 }
-.about header a {
-  color: rgba(50, 145, 182, 0.6039215686);
+.about .header a {
+  color: rgb(18, 119, 147);
 }
-.about header .left-container nav ul li a {
-  color: rgba(50, 145, 182, 0.6039215686);
+.about .header .left-container nav ul li a {
+  color: rgb(18, 119, 147);
 }
-.about header .right-cont168b5aainer .city-name {
-  color: rgba(34, 77, 94, 0.6039215686);
+.about .header .right-container .city-name {
+  color: rgb(18, 119, 147);
+  font-size: 0.7em;
 }
 
 .about {
@@ -44,9 +45,8 @@
   max-width: 80vw;
 }
 .about .about-content .left-section {
-  max-height: 800px;
-  padding: 20px;
   width: 50%;
+  padding: 5vw;
 }
 .about .about-content .left-section .img-container {
   height: 100%;

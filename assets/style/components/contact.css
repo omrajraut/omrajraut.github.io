@@ -1,17 +1,21 @@
-.contact header {
+.contact .header {
   width: 100%;
   position: relative;
   color: rgba(255, 255, 255, 0.825);
-  background-color: rgb(40, 87, 174);
+  background-color: rgb(18, 119, 147);
 }
-.contact header a {
+.contact .header a {
   color: rgba(255, 255, 255, 0.825);
 }
-.contact header .left-container nav ul li a {
+.contact .header .left-container nav ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.825);
 }
-.contact header .right-container .links-box .link-social {
+.contact .header .right-container .city-name {
+  color: rgba(255, 255, 255, 0.825);
+  font-size: 0.7em;
+}
+.contact .header .right-container .links-box .link-social {
   filter: invert(100%) brightness(100%);
   opacity: 0.825;
 }
@@ -33,7 +37,7 @@
   text-align: center;
   width: 100%;
   padding: 5vh;
-  background-color: rgb(40, 87, 174);
+  background-color: rgb(18, 119, 147);
   color: white;
 }
 .contact .container .top .title h2 {
@@ -45,7 +49,7 @@
   max-width: 1500px;
 }
 .contact .container .inner .main {
-  padding: 5vh;
+  padding: 5vh 10vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,30 +58,31 @@
   width: 40vw;
 }
 .contact .container .inner .main .contact-photo .img-container {
-  height: 70vh;
-  max-width: 40vw;
+  width: 100%;
 }
 .contact .container .inner .main .contact-photo .img-container img {
-  height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+.contact .container .inner .main .bio {
+  width: 40vw;
 }
 .contact .container .inner .main .bio {
   position: relative;
-  height: 70vh;
   display: flex;
   align-items: center;
   text-align: center;
 }
+.contact .container .inner .main .bio .bio-inner {
+  width: 80%;
+}
 .contact .container .inner .main .bio .bio-tittle {
   position: absolute;
   color: white;
-  background-color: rgb(63, 116, 200);
+  background-color: rgb(18, 119, 147);
   padding: 20px;
   top: 20px;
-  left: -40px;
-  width: 120%;
+  left: -80px;
+  width: 100%;
 }
 .contact .container .inner .main .bio .bio-desc {
   font-size: 1.5em;
@@ -92,13 +97,15 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   list-style-type: none;
-  padding: 50px;
+  padding: 25px;
 }
 .contact .container .inner .main .bio .bio-desc .bio-contact {
+  padding: 25px;
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
