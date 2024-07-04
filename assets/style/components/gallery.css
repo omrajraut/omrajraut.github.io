@@ -38,7 +38,13 @@
 .gallery .gallery-content {
   margin-bottom: 20vh;
 }
-.gallery .gallery-content .headshots .title, .gallery .gallery-content .editorial-shots .title, .gallery .gallery-content .production-shots .title {
+.gallery .gallery-content .headshots, .gallery .gallery-content .editorial-shots {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+.gallery .gallery-content .headshots .title, .gallery .gallery-content .editorial-shots .title {
   height: 15vh;
   display: flex;
   justify-content: space-around;
@@ -47,18 +53,20 @@
   padding: 2vh 0;
   color: rgb(21, 72, 130);
 }
-.gallery .gallery-content .headshots .inner, .gallery .gallery-content .editorial-shots .inner, .gallery .gallery-content .production-shots .inner {
-  height: 40v;
+.gallery .gallery-content .headshots .inner, .gallery .gallery-content .editorial-shots .inner {
+  width: 70vw;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-.gallery .gallery-content .headshots .inner .top, .gallery .gallery-content .headshots .inner .bottom, .gallery .gallery-content .editorial-shots .inner .top, .gallery .gallery-content .editorial-shots .inner .bottom, .gallery .gallery-content .production-shots .inner .top, .gallery .gallery-content .production-shots .inner .bottom {
+.gallery .gallery-content .headshots .inner .top, .gallery .gallery-content .headshots .inner .bottom, .gallery .gallery-content .editorial-shots .inner .top, .gallery .gallery-content .editorial-shots .inner .bottom {
+  padding: 0 5vw;
   display: flex;
   gap: 10px;
 }
-.gallery .gallery-content .headshots .inner .flex-item, .gallery .gallery-content .editorial-shots .inner .flex-item, .gallery .gallery-content .production-shots .inner .flex-item {
+.gallery .gallery-content .headshots .inner .flex-item, .gallery .gallery-content .editorial-shots .inner .flex-item {
   width: 250px; /* Set a fixed width for the images */
   height: 300px; /* Set a fixed height for the images */
   flex: 4;
@@ -68,14 +76,51 @@
      object-position: top; /* Center the image */
   max-width: 100%;
 }
-.gallery .gallery-content .production-shots .top .img-container, .gallery .gallery-content .production-shots .mid .img-container, .gallery .gallery-content .production-shots .bottom .img-container {
-  position: relative;
+.gallery .gallery-content .production-shots {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
 }
-.gallery .gallery-content .production-shots .top .img-container .i1, .gallery .gallery-content .production-shots .mid .img-container .i1, .gallery .gallery-content .production-shots .bottom .img-container .i1 {
+.gallery .gallery-content .production-shots .title {
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 0;
+  color: rgb(21, 72, 130);
+}
+.gallery .gallery-content .production-shots .inner {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0 5vw;
+}
+.gallery .gallery-content .production-shots .inner .flex-item {
+  width: 300px; /* Set a fixed width for the images */
+  height: 100%; /* Set a fixed height for the images */
+  flex: 4;
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensure images cover the available space without distortion */
+  -o-object-position: top;
+     object-position: top; /* Center the image */
+}
+.gallery .gallery-content .production-shots .inner .top, .gallery .gallery-content .production-shots .inner .top-1, .gallery .gallery-content .production-shots .inner .mid, .gallery .gallery-content .production-shots .inner .mid-1, .gallery .gallery-content .production-shots .inner .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.gallery .gallery-content .production-shots .inner .top .i1, .gallery .gallery-content .production-shots .inner .top-1 .i1, .gallery .gallery-content .production-shots .inner .mid .i1, .gallery .gallery-content .production-shots .inner .mid-1 .i1, .gallery .gallery-content .production-shots .inner .bottom .i1 {
   -o-object-position: top right;
      object-position: top right;
 }
-.gallery .gallery-content .production-shots .top .img-container .i3, .gallery .gallery-content .production-shots .mid .img-container .i3, .gallery .gallery-content .production-shots .bottom .img-container .i3 {
+.gallery .gallery-content .production-shots .inner .top .i3, .gallery .gallery-content .production-shots .inner .top-1 .i3, .gallery .gallery-content .production-shots .inner .mid .i3, .gallery .gallery-content .production-shots .inner .mid-1 .i3, .gallery .gallery-content .production-shots .inner .bottom .i3 {
   -o-object-position: top left;
      object-position: top left;
 }
